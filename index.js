@@ -1,10 +1,12 @@
 
-function takeANumber (katzDeli, name) {
-  katzDeli.push (name)
-  return `Welcome, ${name}. You are number ${katzDeli.length} in line.`
+ var i = 0
+function takeANumber (katzDeliLine) {
+  i++; 
+  katzDeliLine.push(i);
+
+  return `Welcome. You are number ${i} in line.`
 }
 
-//NTS Remember to add the backticks and not general quotes, otherwise the template literals can't connect
 
 
 function nowServing (katzDeliLine) {
